@@ -14,7 +14,7 @@
 - If the browser doesn't automatically open, please go to `http://localhost:3000` to use the app
 
 ## Some thoughts
-- TODO:
+- TODO: def need to cache/store results (500 limited api)
 
 ## `TODO`s/`FIXME`s/nice-to-haves 🛠️
 - TODO: graphql?

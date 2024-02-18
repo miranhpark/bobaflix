@@ -1,10 +1,45 @@
+import Box from '@mui/material/Box';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
+import { distanceHuman } from '../utils/utils'
 
 const columns: GridColDef[] = [
-    { field: 'review_count', headerName: 'Stars', type: 'number', width: 90 },
-    { field: 'rating', headerName: 'Rating', type: 'number', width: 90 },
-    { field: 'distance', headerName: 'Distance', type: 'number', width: 90 },
-    { field: 'name', headerName: 'Name', sortable: false, width: 160 },
+    {
+        field: 'name',
+        headerName: 'Name',
+        flex: 0.5,
+        minWidth: 100,
+    },
+    {
+        field: 'stars',
+        headerName: 'Stars',
+        flex: 0.25,
+        minWidth: 100,
+        renderCell: (params) => {
+            console.log(params)
+            return (
+                <>
+                    <Box component="img" src={params.value} sx={{ height: '40%' }} />
+                </>
+            );
+        },
+    },
+    {
+        field: 'rating',
+        headerName: 'Rating',
+        type: 'number',
+        flex: 0.25,
+        minWidth: 100,
+    },
+    {
+        field: 'distance',
+        headerName: 'Distance',
+        type: 'number',
+        flex: 0.25,
+        minWidth: 100,
+        renderCell: (params) => {
+            return (distanceHuman(params.value).toString() + " mi")
+        }
+    },
 ];
 
 export default function DataTable(props: { rows: Array<Object> }) {

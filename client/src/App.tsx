@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import DataTable from './components/table';
 import HeaderAppBar from './components/appbar';
+import { defineStars } from './utils/utils';
 
 const App = () => {
   // TODO: fix data type
@@ -33,9 +34,11 @@ const App = () => {
 
         const result = await response.json();
 
+        const addStars = defineStars(result.businesses)
+
         // set the data in the state
-        setData(result.businesses);
-        console.log(result)
+        setData(addStars);
+        console.log(addStars)
       } catch (error) {
         console.error('Error fetching data:', error);
       }
