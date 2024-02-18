@@ -45,6 +45,7 @@ const App = () => {
     { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
   ];
 
+  // TODO: make this modular
   return (
     <div>
       <HeaderAppBar />
