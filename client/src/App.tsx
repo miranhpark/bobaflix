@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import DataTable from './components/table';
-import HeaderAppBar from './components/appbar';
+import BobaflixAppBar from './components/appbar';
+import BobaDataTable from './components/table';
+import LocationRadioSelect from './components/radio';
 import { defineStars } from './utils/utils';
 
 const App = () => {
@@ -10,15 +11,15 @@ const App = () => {
   const [data, setData] = useState([]);
   const [statusOK, setStatusOK] = useState(true);
   const [httpStatus, setHttpStatus] = useState('');
+  // TODO: sum type
+  const [selectedLocation, setSelectedLocation] = useState('121 Albright Wy, Los Gatos, CA 95032');
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         // fetch data from the Express backend
         const requestData = {
-          // location: '121 Albright Wy, Los Gatos, CA 95032'
-          // location: '888 Broadway, New York, NY 10003'
-          location: '5808 Sunset Blvd, Los Angeles, CA 90028'
+          location: selectedLocation
         };
 
         const url = 'http://localhost:3001/api/yelp'
@@ -50,21 +51,22 @@ const App = () => {
     };
 
     fetchData();
-  }, []);
+  }, [selectedLocation]);
 
   // TODO: make this modular
   // TODO: styling everything
   return (
     <div>
-      <HeaderAppBar />
+      <BobaflixAppBar />
       {statusOK ? (
         <div>
           <Typography variant="body1" color="inherit" component="div" sx={{ margin: 5 }}>
             Queries the <Link href="https://docs.developer.yelp.com/reference/v3_business_search" target="_blank">Yelp API</Link> for
             boba shops at select Netflix locations (click the store name to go to a shop's Yelp page - happy boba-ing!)
           </Typography>
+          <LocationRadioSelect selectedLocation={selectedLocation} setSelectedLocation={setSelectedLocation} />
           {data ? (
-            <DataTable rows={data} />
+            <BobaDataTable rows={data} />
           ) : (
             <p>Loading...</p>
           )}

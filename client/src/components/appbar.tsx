@@ -5,7 +5,7 @@ import Icon from '@mui/material/Icon';
 
 const bobaEmoji = '\u{1F9CB}';
 
-export default function HeaderAppBar() {
+export default function BobaflixAppBar() {
     return (
         <div>
             <AppBar position="static">

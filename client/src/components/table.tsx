@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { distanceHuman, walkingDistance } from '../utils/utils'
 
-const columns: GridColDef[] = [
+const bobaColumns: GridColDef[] = [
     {
         field: 'name',
         headerName: 'Name',
@@ -60,12 +60,12 @@ const columns: GridColDef[] = [
     },
 ];
 
-export default function DataTable(props: { rows: Array<Object> }) {
+export default function BobaDataTable(props: { rows: Array<Object> }) {
     return (
         <div style={{ height: 400, width: '100%' }}>
             <DataGrid
                 rows={props.rows}
-                columns={columns}
+                columns={bobaColumns}
                 initialState={{
                     pagination: {
                         paginationModel: { page: 0, pageSize: 5 },
