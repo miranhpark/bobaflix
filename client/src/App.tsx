@@ -17,7 +17,6 @@ const App = () => {
         if (!response.ok) {
           setStatusOK(false);
           setHttpStatus(`HTTP error - status: ${response.status} ${response.statusText}`);
-          console.log(response)
           throw new Error(`HTTP error - status: ${response.status}`);
         }
 

@@ -1,7 +1,7 @@
 import { type Response } from 'express'
 
 export async function yelpQuery(res: Response) {
-    // const apiKey = process.env.YELP_API_KEY
+    const apiKey = process.env.YELP_API_KEY
     // if (apiKey === undefined) {
     //     res.status(403).json({ error: 'Permission denied (missing API key)' })
     // } else if (true) {
@@ -11,9 +11,13 @@ export async function yelpQuery(res: Response) {
 
     try {
         // Make a GET request to the Yelp API
-        const response = await fetch('https://icanhazdadjoke.com/', {
-            headers: { Accept: 'application/json' }
+        const response = await fetch('https://api.yelp.com/v3/businesses/search?location=94403&term=boba&sort_by=best_match&limit=20', {
+            headers: {
+                Accept: 'application/json',
+                Authorization: "Bearer " + apiKey?.toString()
+            }
         })
+        console.log(response)
 
         if (!response.ok) {
             console.log(`err: ${response.status}`)
