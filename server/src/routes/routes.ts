@@ -1,9 +1,8 @@
 import { Router } from 'express'
-import SampleController from '../controllers/controllers'
+import controller from '../controllers/controllers'
 
 const router = Router()
 
-router.get('/sample', SampleController.getSampleData)
-router.get('/joke', SampleController.getJokeData)
+router.get('/yelp-query', controller.getData)
 
 export default router

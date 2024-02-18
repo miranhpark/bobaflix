@@ -1,14 +1,10 @@
 import { type Request, type Response } from 'express'
-import { getJoke } from '../utils/utils'
+import { yelpQuery } from '../utils/utils'
 
-class SampleController {
-  static getSampleData (req: Request, res: Response): void {
-    res.json({ message: 'Hello from Express with TypeScript!' })
-  }
-
-  static getJokeData (req: Request, res: Response): void {
-    getJoke(res)
-  }
+class controller {
+    static getData(req: Request, res: Response): void {
+        yelpQuery(res)
+    }
 }
 
-export default SampleController
+export default controller

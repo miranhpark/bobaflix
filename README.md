@@ -3,7 +3,7 @@
 - TODO: summarize specs
 
 ## Setup
-- `npm install cors dotenv concurrently nodemon` 
+- `npm install cors concurrently nodemon` 
 - `npm install express typescript ts-node`
 - `npm install @types/cors @types/express @types/node`
 - `npm install @mui/material @emotion/react @emotion/styled @fontsource/roboto`
