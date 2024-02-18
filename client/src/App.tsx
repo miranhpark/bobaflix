@@ -12,11 +12,11 @@ const App = () => {
     const fetchData = async () => {
       try {
         // fetch data from the Express backend
-        const response = await fetch('http://localhost:8080/api/yelp-query');
+        const response = await fetch('http://localhost:8080/api/yelp');
 
         if (!response.ok) {
           setStatusOK(false);
-          setHttpStatus(`HTTP error - status: ${response.status}`);
+          setHttpStatus(`HTTP error - status: ${response.status} ${response.json}`);
           throw new Error(`HTTP error - status: ${response.status}`);
         }
 

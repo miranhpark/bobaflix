@@ -1,8 +1,21 @@
-import { Router } from 'express'
-import controller from '../controllers/controllers'
+import { Router } from 'express';
+import controller from '../controllers/controllers';
 
-const router = Router()
 
-router.get('/yelp-query', controller.getData)
+export function indexRouter() {
+    const router = Router();
 
-export default router
+    /* GET default home page */
+    router.get('/', function (req, res, next) {
+        res.render('index', { title: 'Express' });
+    });
+}
+
+export function apiRouter() {
+    const router = Router();
+
+    /* GET default home page */
+    router.get('/', function (req, res, next) {
+        res.render('index', { title: 'Express' });
+    });
+}

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
-    "start-backend": "ts-node server/index.ts",
+    "start-backend": "ts-node server/bin/www",
     "start-frontend": "cd client && npm start",
     "build": "tsc",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
@@ -23,6 +23,12 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
   }
 }

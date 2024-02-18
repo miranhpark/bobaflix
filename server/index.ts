@@ -1,9 +1,9 @@
-import { Server } from './src/server'
-import express from 'express'
+// import { Server } from './src/server'
+// import express from 'express'
 
-const app = express()
-// TODO: un-hardcode port
-const port = 8080
+// const app = express()
+// // TODO: un-hardcode port
+// const port = 8080
 
-const server = new Server(app)
-server.start(port)
+// const server = new Server(app, apiKey)
+// server.start(port)

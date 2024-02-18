@@ -17,7 +17,7 @@
 - TODO:
 
 ## `TODO`s/`FIXME`s/nice-to-haves 🛠️
-- TODO: `eslint`
+- TODO: graphql?
 - TODO: `tests`
 - TODO: project directory organization
 - TODO: `npm -D install dev deps`

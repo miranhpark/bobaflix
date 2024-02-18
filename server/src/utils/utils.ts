@@ -3,7 +3,7 @@ import { type Response } from 'express'
 export async function yelpQuery(res: Response) {
     const apiKey = process.env.YELP_API_KEY
     if (apiKey === undefined) {
-        res.status(403).json({ error: 'Permisison denied (missing API key)' })
+        res.status(403).json({ error: 'Permission denied (missing API key)' })
     } else if (true) {
         // TODO: check api key valid
         res.status(403).json({ error: 'Permission denied (invalid API key)' })
