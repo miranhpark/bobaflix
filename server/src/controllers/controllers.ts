@@ -3,7 +3,7 @@ import { yelpQuery } from '../utils/utils'
 
 class controller {
     static getData(req: Request, res: Response): void {
-        yelpQuery(res)
+        yelpQuery(req, res)
     }
 }
 

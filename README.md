@@ -2,15 +2,9 @@
 - Requires [Node.js](https://nodejs.org/en); please make sure `npm` is installed and available
 - TODO: summarize specs
 
-## Setup
-- `npm install cors concurrently nodemon` 
-- `npm install express typescript ts-node`
-- `npm install @types/cors @types/express @types/node`
-- `npm install @mui/material @emotion/react @emotion/styled @fontsource/roboto`
-
 ## Usage 🖥️
-- TODO: set auth token in envvar 
-- To start both the server, `npm start`
+- To start both the server and client, please set the Yelp token as a prefixed environmental variable to `npm start` from the root directory
+  - e.g. `YELP_API_TOKEN=<my-secret-token> npm start`
 - If the browser doesn't automatically open, please go to `http://localhost:3000` to use the app
 
 ## Some thoughts
@@ -23,3 +17,4 @@
 - TODO: `npm -D install dev deps`
 - TODO: think about CORS
 - TODO: secrets management
+- TODO: no time for aria-labels

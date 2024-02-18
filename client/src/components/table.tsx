@@ -14,7 +14,7 @@ const columns: GridColDef[] = [
         renderCell: (params) => {
             return (
                 <>
-                    <Link href={params.row.url}>{params.value}</Link>
+                    <Link href={params.row.url} target="_blank">{params.value}</Link>
                 </>
             );
         },
@@ -73,6 +73,7 @@ export default function DataTable(props: { rows: Array<Object> }) {
                 }}
                 pageSizeOptions={[5, 10]}
                 checkboxSelection
+                disableRowSelectionOnClick
             />
         </div>
     );
