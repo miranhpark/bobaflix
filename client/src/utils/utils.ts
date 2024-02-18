@@ -48,8 +48,19 @@ export function distanceHuman(distanceMeters: number) {
     // conversion factor: 1 meter = 0.000621371 miles
     const miles = distanceMeters * 0.000621371;
 
-    // Round to the second decimal point
+    // round to the second decimal point
     const roundedMiles = Math.round(miles * 100) / 100;
 
     return roundedMiles;
+}
+
+// utility function for estimating walking distance
+export function walkingDistance(distanceMeters: number) {
+    // conversion factor: average human walking speed is approximately 80.476 m/min. (3 mph)
+    const walkTime = distanceMeters / 80.476;
+
+    // round to the nearest minute
+    const roundedTime = Math.round(walkTime);
+
+    return roundedTime;
 }

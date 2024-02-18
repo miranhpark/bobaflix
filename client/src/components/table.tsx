@@ -1,6 +1,8 @@
 import Box from '@mui/material/Box';
+import Tooltip from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
-import { distanceHuman } from '../utils/utils'
+import { distanceHuman, walkingDistance } from '../utils/utils'
 
 const columns: GridColDef[] = [
     {
@@ -15,7 +17,6 @@ const columns: GridColDef[] = [
         flex: 0.25,
         minWidth: 100,
         renderCell: (params) => {
-            console.log(params)
             return (
                 <>
                     <Box component="img" src={params.value} sx={{ height: '40%' }} />
@@ -37,7 +38,15 @@ const columns: GridColDef[] = [
         flex: 0.25,
         minWidth: 100,
         renderCell: (params) => {
-            return (distanceHuman(params.value).toString() + " mi")
+            const thinkingEmoji = '\u{1F914}';
+            const distanceText = `${distanceHuman(params.value).toString()} mi`;
+            const tooltipText = `That's a ${walkingDistance(params.value).toString()} min. walk, if you could walk through walls ${thinkingEmoji}`;
+            return (
+                <Tooltip title={tooltipText} arrow>
+                    <Typography variant="body1" color="inherit" component="div">
+                        {distanceText}
+                    </Typography>
+                </Tooltip>)
         }
     },
 ];

@@ -38,7 +38,6 @@ const App = () => {
 
         // set the data in the state
         setData(addStars);
-        console.log(addStars)
       } catch (error) {
         console.error('Error fetching data:', error);
       }
