@@ -1,0 +1,892 @@
+{
+    "businesses": [
+        {
+            "id": "Q2l7Uy61Bp4UDngOGCDBYQ",
+            "alias": "tp-tea-san-mateo",
+            "name": "TP TEA",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/9TIORIcLL0sbWLEVmw_5OQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/tp-tea-san-mateo?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 235,
+            "categories": [
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                }
+            ],
+            "rating": 4.1,
+            "coordinates": {
+                "latitude": 37.56331919294046,
+                "longitude": -122.32395302353852
+            },
+            "transactions": [],
+            "location": {
+                "address1": "65 E 4th Ave",
+                "address2": "",
+                "address3": null,
+                "city": "San Mateo",
+                "zip_code": "94401",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "65 E 4th Ave",
+                    "San Mateo, CA 94401"
+                ]
+            },
+            "phone": "+16505131754",
+            "display_phone": "(650) 513-1754",
+            "distance": 3142.694052742941
+        },
+        {
+            "id": "pkfziXH-LOVtnxVp7kQuPw",
+            "alias": "pink-pink-tea-shoppe-san-mateo-2",
+            "name": "Pink Pink Tea Shoppe",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ki-PCzpLnwEBSH8MHcfZ-g/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/pink-pink-tea-shoppe-san-mateo-2?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 64,
+            "categories": [
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                },
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                },
+                {
+                    "alias": "juicebars",
+                    "title": "Juice Bars & Smoothies"
+                }
+            ],
+            "rating": 4.4,
+            "coordinates": {
+                "latitude": 37.537533672046266,
+                "longitude": -122.30040451530098
+            },
+            "transactions": [],
+            "location": {
+                "address1": "60 31st Ave",
+                "address2": "Ste 285",
+                "address3": "",
+                "city": "San Mateo",
+                "zip_code": "94403",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "60 31st Ave",
+                    "Ste 285",
+                    "San Mateo, CA 94403"
+                ]
+            },
+            "phone": "",
+            "display_phone": "",
+            "distance": 409.6633084719341
+        },
+        {
+            "id": "VMibyZrQnx1F1qa8llvMPA",
+            "alias": "heere-tea-san-mateo-5",
+            "name": "Heere Tea",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/dlcmvIaCHFmz4CEvACoBoA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/heere-tea-san-mateo-5?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 123,
+            "categories": [
+                {
+                    "alias": "desserts",
+                    "title": "Desserts"
+                },
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                }
+            ],
+            "rating": 4.1,
+            "coordinates": {
+                "latitude": 37.565893,
+                "longitude": -122.32242
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "253 S B St",
+                "address2": null,
+                "address3": "",
+                "city": "San Mateo",
+                "zip_code": "94401",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "253 S B St",
+                    "San Mateo, CA 94401"
+                ]
+            },
+            "phone": "",
+            "display_phone": "",
+            "distance": 3316.3934754174884
+        },
+        {
+            "id": "gxbBro3yYzZzMe4ttwMf9A",
+            "alias": "shuyi-grass-jelly-and-tea-san-mateo",
+            "name": "Shuyi Grass Jelly & Tea",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/kJsLoI5EeVUEtXheENiMFA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/shuyi-grass-jelly-and-tea-san-mateo?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 17,
+            "categories": [
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                }
+            ],
+            "rating": 3.8,
+            "coordinates": {
+                "latitude": 37.56413,
+                "longitude": -122.322948
+            },
+            "transactions": [],
+            "location": {
+                "address1": "165 E 4th Ave",
+                "address2": "",
+                "address3": null,
+                "city": "San Mateo",
+                "zip_code": "94401",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "165 E 4th Ave",
+                    "San Mateo, CA 94401"
+                ]
+            },
+            "phone": "",
+            "display_phone": "",
+            "distance": 3168.0870268417593
+        },
+        {
+            "id": "Xm-Yd2K-tWgSjcFIflpG0A",
+            "alias": "urban-ritual-san-mateo",
+            "name": "Urban Ritual",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/SVUrNaF_qkeje-C7hWi1xQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/urban-ritual-san-mateo?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 600,
+            "categories": [
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                }
+            ],
+            "rating": 4.2,
+            "coordinates": {
+                "latitude": 37.566537,
+                "longitude": -122.323725
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "140 South B St",
+                "address2": null,
+                "address3": "",
+                "city": "San Mateo",
+                "zip_code": "94401",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "140 South B St",
+                    "San Mateo, CA 94401"
+                ]
+            },
+            "phone": "+16504583298",
+            "display_phone": "(650) 458-3298",
+            "distance": 3434.455876481464
+        },
+        {
+            "id": "YaPtgVlT4J1OUoJGvH_zOQ",
+            "alias": "raretea-san-mateo-2",
+            "name": "RareTea",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/sLSah_xz7k-GEZJu5p8sgQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/raretea-san-mateo-2?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 141,
+            "categories": [
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                }
+            ],
+            "rating": 4.4,
+            "coordinates": {
+                "latitude": 37.53380083,
+                "longitude": -122.32729233
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "location": {
+                "address1": "1330 W Hillsdale Blvd",
+                "address2": null,
+                "address3": "",
+                "city": "San Mateo",
+                "zip_code": "94403",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "1330 W Hillsdale Blvd",
+                    "San Mateo, CA 94403"
+                ]
+            },
+            "phone": "+16503896625",
+            "display_phone": "(650) 389-6625",
+            "distance": 2176.6125043077004
+        },
+        {
+            "id": "TkIo6SWq69NIuL8Z6f24cg",
+            "alias": "tiger-tea-and-juice-san-mateo-san-mateo",
+            "name": "Tiger Tea & Juice - San Mateo",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/giax4mIzmD4x_nmjaM6Gjw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/tiger-tea-and-juice-san-mateo-san-mateo?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 40,
+            "categories": [
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                },
+                {
+                    "alias": "juicebars",
+                    "title": "Juice Bars & Smoothies"
+                }
+            ],
+            "rating": 4.4,
+            "coordinates": {
+                "latitude": 37.565,
+                "longitude": -122.32287
+            },
+            "transactions": [],
+            "location": {
+                "address1": "212 E 3rd Ave",
+                "address2": null,
+                "address3": "",
+                "city": "San Mateo",
+                "zip_code": "94401",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "212 E 3rd Ave",
+                    "San Mateo, CA 94401"
+                ]
+            },
+            "phone": "",
+            "display_phone": "",
+            "distance": 3256.5686398383727
+        },
+        {
+            "id": "DWFE92L-OkD-uNeTpdTbdA",
+            "alias": "teaspoon-san-mateo-san-mateo-2",
+            "name": "Teaspoon San Mateo",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Ch_ZY6_Bc4QfMXUg5j4deQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/teaspoon-san-mateo-san-mateo-2?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 576,
+            "categories": [
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                },
+                {
+                    "alias": "shavedice",
+                    "title": "Shaved Ice"
+                },
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 3.8,
+            "coordinates": {
+                "latitude": 37.564318,
+                "longitude": -122.3238431
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "128 E 3rd Ave",
+                "address2": null,
+                "address3": null,
+                "city": "San Mateo",
+                "zip_code": "94401",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "128 E 3rd Ave",
+                    "San Mateo, CA 94401"
+                ]
+            },
+            "phone": "+16503935727",
+            "display_phone": "(650) 393-5727",
+            "distance": 3218.0719569568296
+        },
+        {
+            "id": "DIGyDs-nUaQ0r-r-nEC21Q",
+            "alias": "sweet-moment-san-mateo",
+            "name": "Sweet Moment",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/WbmbktaJqksdCe_NwiBRWA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/sweet-moment-san-mateo?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 429,
+            "categories": [
+                {
+                    "alias": "desserts",
+                    "title": "Desserts"
+                },
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                },
+                {
+                    "alias": "chinese",
+                    "title": "Chinese"
+                }
+            ],
+            "rating": 3.9,
+            "coordinates": {
+                "latitude": 37.5648129008036,
+                "longitude": -122.323827428358
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$",
+            "location": {
+                "address1": "137 E 3rd Ave",
+                "address2": "",
+                "address3": null,
+                "city": "San Mateo",
+                "zip_code": "94401",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "137 E 3rd Ave",
+                    "San Mateo, CA 94401"
+                ]
+            },
+            "phone": "",
+            "display_phone": "",
+            "distance": 3275.4693457623234
+        },
+        {
+            "id": "9qAOFHlf3Uu71lxv3v0yFA",
+            "alias": "tiny-tea-co-burlingame-5",
+            "name": "Tiny Tea Co.",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Vw-i7a12RMDJD4cKMp80hg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/tiny-tea-co-burlingame-5?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 137,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                },
+                {
+                    "alias": "juicebars",
+                    "title": "Juice Bars & Smoothies"
+                },
+                {
+                    "alias": "cafes",
+                    "title": "Cafes"
+                }
+            ],
+            "rating": 4.4,
+            "coordinates": {
+                "latitude": 37.5792628,
+                "longitude": -122.3457131
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$",
+            "location": {
+                "address1": "1115 Burlingame Ave",
+                "address2": null,
+                "address3": null,
+                "city": "Burlingame",
+                "zip_code": "94010",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "1115 Burlingame Ave",
+                    "Burlingame, CA 94010"
+                ]
+            },
+            "phone": "+16503896674",
+            "display_phone": "(650) 389-6674",
+            "distance": 5717.383855979458
+        },
+        {
+            "id": "aGwk8e8O9TiZF2iqdX3jag",
+            "alias": "sunright-tea-studio-burlingame-burlingame",
+            "name": "Sunright Tea Studio - Burlingame",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/dcZk4y9PRJu0LRLrOC5LOg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/sunright-tea-studio-burlingame-burlingame?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 146,
+            "categories": [
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                }
+            ],
+            "rating": 4.4,
+            "coordinates": {
+                "latitude": 37.580086,
+                "longitude": -122.346675
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "346 Lorton Ave",
+                "address2": null,
+                "address3": "",
+                "city": "Burlingame",
+                "zip_code": "94010",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "346 Lorton Ave",
+                    "Burlingame, CA 94010"
+                ]
+            },
+            "phone": "+16504372959",
+            "display_phone": "(650) 437-2959",
+            "distance": 5839.880674367899
+        },
+        {
+            "id": "59J7CIiAss8fj3ehU4lGUA",
+            "alias": "tong-sui-san-mateo",
+            "name": "Tong Sui",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/DR49mEQJKXunaKhMtqmCTw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/tong-sui-san-mateo?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 178,
+            "categories": [
+                {
+                    "alias": "desserts",
+                    "title": "Desserts"
+                }
+            ],
+            "rating": 4.4,
+            "coordinates": {
+                "latitude": 37.56572424786998,
+                "longitude": -122.32283035214957
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "250 S B St",
+                "address2": null,
+                "address3": "",
+                "city": "San Mateo",
+                "zip_code": "94401",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "250 S B St",
+                    "San Mateo, CA 94401"
+                ]
+            },
+            "phone": "",
+            "display_phone": "",
+            "distance": 3316.444450592378
+        },
+        {
+            "id": "HZPkNjGm2D-a5mHd9W278w",
+            "alias": "tpumps-foster-city",
+            "name": "Tpumps",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/NWjaVX1sqzO-xu6nNuCJbw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/tpumps-foster-city?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 374,
+            "categories": [
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                },
+                {
+                    "alias": "juicebars",
+                    "title": "Juice Bars & Smoothies"
+                },
+                {
+                    "alias": "tea",
+                    "title": "Tea Rooms"
+                }
+            ],
+            "rating": 3.8,
+            "coordinates": {
+                "latitude": 37.5573531403401,
+                "longitude": -122.274742340384
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "985 E Hillsdale Blvd",
+                "address2": "",
+                "address3": "Metro Center Plz",
+                "city": "Foster City",
+                "zip_code": "94404",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "985 E Hillsdale Blvd",
+                    "Metro Center Plz",
+                    "Foster City, CA 94404"
+                ]
+            },
+            "phone": "+15103988499",
+            "display_phone": "(510) 398-8499",
+            "distance": 3220.010716773128
+        },
+        {
+            "id": "GEKhuwrBvCKNvAkwYp-5LQ",
+            "alias": "bobabia-san-mateo-4",
+            "name": "Bobabia",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/v9z-YEyHeh5posA7T_U_lg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/bobabia-san-mateo-4?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 493,
+            "categories": [
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                },
+                {
+                    "alias": "venues",
+                    "title": "Venues & Event Spaces"
+                },
+                {
+                    "alias": "beer_and_wine",
+                    "title": "Beer, Wine & Spirits"
+                }
+            ],
+            "rating": 3.8,
+            "coordinates": {
+                "latitude": 37.5671965,
+                "longitude": -122.32544233
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "271 Baldwin Ave",
+                "address2": "",
+                "address3": "",
+                "city": "San Mateo",
+                "zip_code": "94401",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "271 Baldwin Ave",
+                    "San Mateo, CA 94401"
+                ]
+            },
+            "phone": "+16503897077",
+            "display_phone": "(650) 389-7077",
+            "distance": 3577.256517679093
+        },
+        {
+            "id": "gFl8dZrou2hNHpddplzzAA",
+            "alias": "mr-green-bubble-san-mateo",
+            "name": "Mr. Green Bubble",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/ubXKAAQ7A5HO-v7HSooAZg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/mr-green-bubble-san-mateo?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 93,
+            "categories": [
+                {
+                    "alias": "taiwanese",
+                    "title": "Taiwanese"
+                },
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                },
+                {
+                    "alias": "juicebars",
+                    "title": "Juice Bars & Smoothies"
+                }
+            ],
+            "rating": 3.2,
+            "coordinates": {
+                "latitude": 37.54470507323991,
+                "longitude": -122.28481421138927
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "2986 S Norfolk St",
+                "address2": "",
+                "address3": null,
+                "city": "San Mateo",
+                "zip_code": "94403",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "2986 S Norfolk St",
+                    "San Mateo, CA 94403"
+                ]
+            },
+            "phone": "+16503580352",
+            "display_phone": "(650) 358-0352",
+            "distance": 1766.2995161846643
+        },
+        {
+            "id": "RrFzTEe3gRPuWw6sde3mOA",
+            "alias": "wanpo-tea-shop-millbrae",
+            "name": "Wanpo Tea Shop",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/HjUKSTv2-g6Q5rF94OPQMg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/wanpo-tea-shop-millbrae?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 112,
+            "categories": [
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                }
+            ],
+            "rating": 4.1,
+            "coordinates": {
+                "latitude": 37.606076,
+                "longitude": -122.398015
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "1069 El Camino Real",
+                "address2": "",
+                "address3": null,
+                "city": "Millbrae",
+                "zip_code": "94030",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "1069 El Camino Real",
+                    "Millbrae, CA 94030"
+                ]
+            },
+            "phone": "+16282288007",
+            "display_phone": "(628) 228-8007",
+            "distance": 11083.118834846919
+        },
+        {
+            "id": "KMdzW4QetmhXwFTWtVHw0Q",
+            "alias": "yifang-taiwan-fruit-tea-san-mateo-2",
+            "name": "Yifang Taiwan Fruit Tea",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/uJl3oWjd9W3uiqISgLM1tA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/yifang-taiwan-fruit-tea-san-mateo-2?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 123,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                },
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 37.566817,
+                "longitude": -122.324028
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "110 S B St",
+                "address2": null,
+                "address3": null,
+                "city": "San Mateo",
+                "zip_code": "94401",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "110 S B St",
+                    "San Mateo, CA 94401"
+                ]
+            },
+            "phone": "+16507273963",
+            "display_phone": "(650) 727-3963",
+            "distance": 3474.6766154564893
+        },
+        {
+            "id": "JodFJ39AtJf8fnnhQRBRnQ",
+            "alias": "luluyum-san-mateo",
+            "name": "Luluyum",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/pMksSQviurrWVkHofAjzrg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/luluyum-san-mateo?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 76,
+            "categories": [
+                {
+                    "alias": "desserts",
+                    "title": "Desserts"
+                },
+                {
+                    "alias": "cakeshop",
+                    "title": "Patisserie/Cake Shop"
+                },
+                {
+                    "alias": "customcakes",
+                    "title": "Custom Cakes"
+                }
+            ],
+            "rating": 3.9,
+            "coordinates": {
+                "latitude": 37.5633442,
+                "longitude": -122.3252495
+            },
+            "transactions": [],
+            "location": {
+                "address1": "30 E 3rd Ave",
+                "address2": "",
+                "address3": null,
+                "city": "San Mateo",
+                "zip_code": "94401",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "30 E 3rd Ave",
+                    "San Mateo, CA 94401"
+                ]
+            },
+            "phone": "+16507813789",
+            "display_phone": "(650) 781-3789",
+            "distance": 3211.3967946735706
+        },
+        {
+            "id": "mWRUJraG7Z_4JsRIlWl9CQ",
+            "alias": "yans-tea-san-carlos",
+            "name": "Yan's Tea",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/fxDRkRcyeP4tY6N5ztGlsg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/yans-tea-san-carlos?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 34,
+            "categories": [
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                },
+                {
+                    "alias": "tea",
+                    "title": "Tea Rooms"
+                },
+                {
+                    "alias": "juicebars",
+                    "title": "Juice Bars & Smoothies"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 37.50307,
+                "longitude": -122.25658
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "885 Laurel St",
+                "address2": null,
+                "address3": "",
+                "city": "San Carlos",
+                "zip_code": "94070",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "885 Laurel St",
+                    "San Carlos, CA 94070"
+                ]
+            },
+            "phone": "+16505939777",
+            "display_phone": "(650) 593-9777",
+            "distance": 5867.161570699695
+        },
+        {
+            "id": "2oGYlRxPAn0SyL9AMV5HVw",
+            "alias": "tong-sui-redwood-city",
+            "name": "Tong Sui",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Tx_lFmZ5NMc9clAdCmRDMw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/tong-sui-redwood-city?adjust_creative=zwRJCypfRLAUDSvwWtOflg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=zwRJCypfRLAUDSvwWtOflg",
+            "review_count": 200,
+            "categories": [
+                {
+                    "alias": "desserts",
+                    "title": "Desserts"
+                },
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                }
+            ],
+            "rating": 4.7,
+            "coordinates": {
+                "latitude": 37.486511113679136,
+                "longitude": -122.23139127388882
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "2400 Broadway",
+                "address2": "Unit 110",
+                "address3": "",
+                "city": "Redwood City",
+                "zip_code": "94063",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "2400 Broadway",
+                    "Unit 110",
+                    "Redwood City, CA 94063"
+                ]
+            },
+            "phone": "+16503623313",
+            "display_phone": "(650) 362-3313",
+            "distance": 8730.50563605991
+        }
+    ],
+    "total": 183,
+    "region": {
+        "center": {
+            "longitude": -122.30392456054688,
+            "latitude": 37.53993836487742
+        }
+    }
+}
