@@ -1,4 +1,5 @@
 import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
@@ -10,11 +11,18 @@ const columns: GridColDef[] = [
         headerName: 'Name',
         flex: 0.5,
         minWidth: 100,
+        renderCell: (params) => {
+            return (
+                <>
+                    <Link href={params.row.url}>{params.value}</Link>
+                </>
+            );
+        },
     },
     {
         field: 'stars',
         headerName: 'Stars',
-        flex: 0.25,
+        flex: 0.2,
         minWidth: 100,
         renderCell: (params) => {
             return (
@@ -28,7 +36,7 @@ const columns: GridColDef[] = [
         field: 'rating',
         headerName: 'Rating',
         type: 'number',
-        flex: 0.25,
+        flex: 0.1,
         minWidth: 100,
     },
     {
@@ -40,7 +48,8 @@ const columns: GridColDef[] = [
         renderCell: (params) => {
             const thinkingEmoji = '\u{1F914}';
             const distanceText = `${distanceHuman(params.value).toString()} mi`;
-            const tooltipText = `That's a ${walkingDistance(params.value).toString()} min. walk, if you could walk through walls ${thinkingEmoji}`;
+            const tooltipText = `That's a ${walkingDistance(params.value).toString()} min. walk, 
+                                    if you could walk through walls ${thinkingEmoji}`;
             return (
                 <Tooltip title={tooltipText} arrow>
                     <Typography variant="body1" color="inherit" component="div">

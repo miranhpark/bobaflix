@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import DataTable from './components/table';
 import HeaderAppBar from './components/appbar';
@@ -37,6 +38,7 @@ const App = () => {
         const addStars = defineStars(result.businesses)
 
         // set the data in the state
+        console.log(addStars)
         setData(addStars);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -47,15 +49,16 @@ const App = () => {
   }, []);
 
   // TODO: make this modular
-  // TODO: 403 styling
-  // TODO: rename data
+  // TODO: styling everything
+  // TODO: rename data var
   return (
     <div>
       <HeaderAppBar />
       {statusOK ? (
         <div>
           <Typography variant="body1" color="inherit" component="div" sx={{ margin: 5 }}>
-            description goes here
+            Queries the <Link href="https://docs.developer.yelp.com/reference/v3_business_search">Yelp API</Link> for
+            boba shops at select Netflix locations (click the store name to go to a shop's Yelp page - happy boba-ing!)
           </Typography>
           {data ? (
             <DataTable rows={data} />
