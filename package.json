@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
-    "start-backend": "ts-node server/bin/www",
+    "start-backend": "nodemon --config nodemon.json server/www/bin",
     "start-frontend": "cd client && npm start",
     "build": "tsc",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",

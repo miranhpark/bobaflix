@@ -12,11 +12,12 @@ const App = () => {
     const fetchData = async () => {
       try {
         // fetch data from the Express backend
-        const response = await fetch('http://localhost:8080/api/yelp');
+        const response = await fetch('http://localhost:3001/api/yelp');
 
         if (!response.ok) {
           setStatusOK(false);
-          setHttpStatus(`HTTP error - status: ${response.status} ${response.json}`);
+          setHttpStatus(`HTTP error - status: ${response.status} ${response.statusText}`);
+          console.log(response)
           throw new Error(`HTTP error - status: ${response.status}`);
         }
 
@@ -46,6 +47,7 @@ const App = () => {
   ];
 
   // TODO: make this modular
+  // TODO: 403 styling
   return (
     <div>
       <HeaderAppBar />
