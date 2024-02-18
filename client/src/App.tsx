@@ -1,4 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import Typography from '@mui/material/Typography';
+import DataTable from './components/table';
+import HeaderAppBar from './components/appbar';
 
 const App = () => {
   const [data, setData] = useState(null);
@@ -26,14 +29,19 @@ const App = () => {
     fetchData();
   }, []);
 
+
   return (
     <div>
-      <h1>React Frontend</h1>
+      <HeaderAppBar />
+      <Typography variant="body1" color="inherit" component="div" sx={{ margin: 5 }}>
+        Description goes here
+      </Typography>
       {data ? (
-        <p>Data from Express backend: {JSON.stringify(data)}</p>
+        <DataTable />
       ) : (
         <p>Loading...</p>
       )}
+
     </div>
   );
 };

@@ -1,9 +1,9 @@
-import { Router } from 'express';
-import SampleController from '../controllers/controllers';
+import { Router } from 'express'
+import SampleController from '../controllers/controllers'
 
-const router = Router();
+const router = Router()
 
-router.get('/sample', SampleController.getSampleData);
-router.get('/joke', SampleController.getJokeData);
+router.get('/sample', SampleController.getSampleData)
+router.get('/joke', SampleController.getJokeData)
 
-export default router;
+export default router
