@@ -1,10 +1,11 @@
 # 🧋 bobaflix 🍿
+![example screenshot of the bobaflix UI](https://github.com/miranhpark/bobaflix/blob/dev/bobaflix_screenshot.png?raw=true)
 
 ## `README` 📖
 - Requires [Node.js](https://nodejs.org/en); please make sure `npm` is installed and available
 - `bobaflix` uses data from the [Yelp API](https://docs.developer.yelp.com/reference/v3_business_search) to find boba shops!
   - Parameters:
-    - Within 6 miles (~10,000 meters)
+    - Within approximately 6~ miles (10,000 meters)
     - Near any of the following 3 Netflix offices (choose one):
         - 121 Albright Way, Los Gatos, CA 95032
         - 888 Broadway, New York, NY 10003
@@ -26,7 +27,7 @@
 - The backend server uses the [Express.js](https://expressjs.com/), a relatively common HTTP framework (running on port 3001)
 - Right now, every time we switch a location selection there's a Yelp API call
   - If we needed to serve more traffic, it would be great if these results could be cached and/or stored (though the Yelp API TOS has some rules about it!), given you can only make 500 calls a day 😅
-- I _definitely_ focused on having a frontend here, and didn't get around to tests, so please seriously consider this as `dev` and not production!!
+- I _definitely_ focused on having a frontend here, and didn't get around to tests, so please seriously consider this as `dev` and not production! 🫠
   - Next steps would definitely be adding at a minimum, something like some `jest` React component-rendering tests, and basic http/API/unit tests for internals
   
 ## `TODO`s/`FIXME`s/nice-to-haves 🛠️
