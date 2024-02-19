@@ -1,3 +1,4 @@
+import '@fontsource/bebas-neue';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -10,10 +11,10 @@ export default function BobaflixAppBar() {
         <div>
             <AppBar position="static">
                 <Toolbar sx={{ marginBottom: 2 }}>
-                    <Icon aria-label="menu" sx={{ fontSize: 45, margin: 2 }}>
+                    <Icon aria-label="menu" sx={{ fontSize: '200%', margin: 1, overflow: 'visible' }}>
                         {bobaEmoji}
                     </Icon>
-                    <Typography variant="h4" color="inherit" component="div" sx={{ marginTop: 2 }}>
+                    <Typography variant="h4" color='#E50914' component="div" sx={{ marginTop: 2, fontFamily: 'Bebas Neue' }}>
                         Bobaflix
                     </Typography>
                 </Toolbar>

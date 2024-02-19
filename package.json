@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@fontsource/bebas-neue": "^5.0.18",
     "@types/express": "^4.17.21",
     "concurrently": "^8.2.2",
     "cors": "^2.8.5",

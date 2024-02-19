@@ -37,6 +37,13 @@ const bobaColumns: GridColDef[] = [
         type: 'number',
         flex: 0.1,
         minWidth: 100,
+        renderCell: (params) => {
+            return (
+                <Typography variant="body1" color="inherit" component="div">
+                    {params.value}
+                </Typography>
+            )
+        }
     },
     {
         field: 'distance',

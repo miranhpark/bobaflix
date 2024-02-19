@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
+import { ThemeProvider } from '@mui/material/styles';
 import BobaflixAppBar from './components/appbar';
 import BobaDataTable from './components/table';
 import LocationRadioSelect from './components/radio'
+import { customTheme } from './utils/theme';
 import { NetflixLocation, YelpBusiness } from './utils/types';
 import { defineStars } from './utils/utils';
 
@@ -30,9 +33,8 @@ async function fetchYelpData(selectedLocation: NetflixLocation): Promise<Array<Y
   // parse the JSON response
   const result = await response.json();
 
-  // take just business data
+  // take just the businesses data
   const businesses = result.data.businesses
-  console.log(businesses)
   return businesses
 }
 
@@ -68,22 +70,25 @@ const App = () => {
 
   return (
     <div>
-      <BobaflixAppBar />
-      {statusOK ? (
-        <div>
-          <AppDescription />
-          <LocationRadioSelect selectedLocation={selectedLocation} setSelectedLocation={setSelectedLocation} />
-          {yelpData ? (
-            <BobaDataTable rows={yelpData} />
-          ) : (
-            <p>Loading...</p>
-          )}
-        </div>
-      ) : (
-        <Typography variant="body1" color="inherit" component="div" sx={{ margin: 5 }}>
-          {httpError}
-        </Typography>
-      )}
+      <ThemeProvider theme={customTheme}>
+        <CssBaseline />
+        <BobaflixAppBar />
+        {statusOK ? (
+          <div>
+            <AppDescription />
+            <LocationRadioSelect selectedLocation={selectedLocation} setSelectedLocation={setSelectedLocation} />
+            {yelpData ? (
+              <BobaDataTable rows={yelpData} />
+            ) : (
+              <p>Loading...</p>
+            )}
+          </div>
+        ) : (
+          <Typography variant="body1" color="inherit" component="div" sx={{ margin: 5 }}>
+            {httpError}
+          </Typography>
+        )}
+      </ThemeProvider>
     </div>
   );
 };

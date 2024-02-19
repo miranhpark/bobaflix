@@ -7,7 +7,9 @@
         - 121 Albright Way, Los Gatos, CA 95032
         - 888 Broadway, New York, NY 10003
         - 5808 Sunset Blvd, Los Angeles, CA 90028
-- Using the menu tabs at the top of each column, you should be able to sort by both rating and distance
+- Using the column headers, you should be able to sort by both rating and distance
+  - Hover near the column name and click on the arrow that appears to reverse the sort
+  - Or, alternatively, click on the kebab menu on the right of the column name for more  options
 - Use the page navigation at the bottom to load more results (up to 50)
 
 ## Usage 🖥️
@@ -32,4 +34,4 @@
 - I didn't do a great job of distinguishing between `dev` (think: `npm -D install dev deps`) and production required dependencies for now (nor for `npm` scripts)
 - CORS is enabled freely here since we're operating locally client-to-server
 - Unfortunately, I ran out of time to make sure all the components were accessible/properly aria-label-ed, but would love to
-- Pretty minor, but I would have also loved to add some better styling (and put it into individual style-sheets)
+- Pretty minor, but I would have also loved to add some better styling (and put it into individual style-sheets for components)
