@@ -3,7 +3,6 @@ import Link from '@mui/material/Link';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
-import { distanceHuman, walkingDistance } from '../utils/utils'
 
 const bobaColumns: GridColDef[] = [
     {
@@ -77,4 +76,27 @@ export default function BobaDataTable(props: { rows: Array<Object> }) {
             />
         </div>
     );
+}
+
+
+// utility function for making distance a human readable string
+function distanceHuman(distanceMeters: number) {
+    // conversion factor: 1 meter = 0.000621371 miles
+    const miles = distanceMeters * 0.000621371;
+
+    // round to the second decimal point
+    const roundedMiles = Math.round(miles * 100) / 100;
+
+    return roundedMiles;
+}
+
+// utility function for estimating walking distance
+function walkingDistance(distanceMeters: number) {
+    // conversion factor: average human walking speed is approximately 80.476 m/min. (3 mph)
+    const walkTime = distanceMeters / 80.476;
+
+    // round to the nearest minute
+    const roundedTime = Math.round(walkTime);
+
+    return roundedTime;
 }

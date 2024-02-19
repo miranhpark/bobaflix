@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import controller from '../controllers/controllers';
+import { yelpController } from '../controllers/controllers';
 
 const router = Router();
 
 /* GET Yelp API query */
-router.post('/yelp', controller.getData);
+router.post('/yelp', yelpController);
 
 module.exports = router;

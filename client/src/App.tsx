@@ -3,15 +3,14 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import BobaflixAppBar from './components/appbar';
 import BobaDataTable from './components/table';
-import LocationRadioSelect, { NetflixLocations } from './components/radio';
+import LocationRadioSelect from './components/radio'
+import { NetflixLocations } from './utils/types';
 import { defineStars } from './utils/utils';
 
 const App = () => {
-  // TODO: fix all types e.g. data prop and naming
-  const [data, setData] = useState<Array<Object>>([]);
+  const [yelpData, setYelpData] = useState<Array<Object>>([]);
   const [statusOK, setStatusOK] = useState<boolean>(true);
   const [httpStatus, setHttpStatus] = useState<string>('');
-  // TODO: sum type
   const [selectedLocation, setSelectedLocation] = useState<NetflixLocations>(NetflixLocations.LosGatos);
 
   // TODO: maybe reorganize to return a promise<json>
@@ -45,7 +44,7 @@ const App = () => {
         const addStars = defineStars(result.data.businesses)
 
         // set the data in the state
-        setData(addStars);
+        setYelpData(addStars);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -54,20 +53,15 @@ const App = () => {
     fetchData();
   }, [selectedLocation]);
 
-  // TODO: make this modular
-  // TODO: styling everything
   return (
     <div>
       <BobaflixAppBar />
       {statusOK ? (
         <div>
-          <Typography variant="body1" color="inherit" component="div" sx={{ margin: 5 }}>
-            Queries the <Link href="https://docs.developer.yelp.com/reference/v3_business_search" target="_blank">Yelp API</Link> for
-            boba shops at select Netflix locations (click the store name to go to a shop's Yelp page - happy boba-ing!)
-          </Typography>
+          <AppDescription />
           <LocationRadioSelect selectedLocation={selectedLocation} setSelectedLocation={setSelectedLocation} />
-          {data ? (
-            <BobaDataTable rows={data} />
+          {yelpData ? (
+            <BobaDataTable rows={yelpData} />
           ) : (
             <p>Loading...</p>
           )}
@@ -80,5 +74,14 @@ const App = () => {
     </div>
   );
 };
+
+function AppDescription() {
+  return (
+    <Typography variant="body1" color="inherit" component="div" sx={{ margin: 5 }}>
+      Queries the <Link href="https://docs.developer.yelp.com/reference/v3_business_search" target="_blank">Yelp API</Link> for
+      boba shops at select Netflix locations (click the store name to go to a shop's Yelp page - happy boba-ing!)
+    </Typography>
+  )
+}
 
 export default App;

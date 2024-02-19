@@ -4,12 +4,7 @@ import FormControl from '@mui/material/FormControl';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormLabel from '@mui/material/FormLabel';
 import Paper from '@mui/material/Paper';
-
-export enum NetflixLocations {
-    LosGatos = '121 Albright Wy, Los Gatos, CA 95032',
-    NewYork = '888 Broadway, New York, NY 10003',
-    LosAngeles = '5808 Sunset Blvd, Los Angeles, CA 90028',
-}
+import { NetflixLocations } from '../utils/types';
 
 export default function LocationRadioSelect(props: {
     selectedLocation: string,
