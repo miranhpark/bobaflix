@@ -23,10 +23,13 @@ async function yelpQuery(req: Request, res: Response) {
     try {
         // Make a GET request to the Yelp API with some fixed parameters
         // (limit 50, distance 6~ mi., sorted by best match, categories search for 'bubbletea')
-        // const url = `https://api.yelp.com/v3/businesses/search?location=${locationString}&radius=10000&categories=bubbletea&sort_by=best_match&limit=50`
 
-        const response = await fetch('http://localhost:3000/test.json', {
-            // const response = await fetch(url, {
+        // Uncomment the other `url` variable line to use local fixed test data hosted by the frontend
+        // TODO: make this configurable
+        // const url = 'http://localhost:3000/test.json'
+        const url = `https://api.yelp.com/v3/businesses/search?location=${locationString}&radius=10000&categories=bubbletea&sort_by=best_match&limit=50`
+
+        const response = await fetch(url, {
             headers: {
                 accept: 'application/json',
                 Authorization: 'Bearer ' + apiKey?.toString()
