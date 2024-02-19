@@ -3,17 +3,18 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import BobaflixAppBar from './components/appbar';
 import BobaDataTable from './components/table';
-import LocationRadioSelect from './components/radio';
+import LocationRadioSelect, { NetflixLocations } from './components/radio';
 import { defineStars } from './utils/utils';
 
 const App = () => {
   // TODO: fix all types e.g. data prop and naming
-  const [data, setData] = useState([]);
-  const [statusOK, setStatusOK] = useState(true);
-  const [httpStatus, setHttpStatus] = useState('');
+  const [data, setData] = useState<Array<Object>>([]);
+  const [statusOK, setStatusOK] = useState<boolean>(true);
+  const [httpStatus, setHttpStatus] = useState<string>('');
   // TODO: sum type
-  const [selectedLocation, setSelectedLocation] = useState('121 Albright Wy, Los Gatos, CA 95032');
+  const [selectedLocation, setSelectedLocation] = useState<NetflixLocations>(NetflixLocations.LosGatos);
 
+  // TODO: maybe reorganize to return a promise<json>
   useEffect(() => {
     const fetchData = async () => {
       try {

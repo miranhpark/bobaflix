@@ -20,6 +20,7 @@ function importAll(directoryContext: any) {
 function mapStars(rating: number) {
     const images = importAll(require.context('../../public/stars', false, /\.(png|jpe?g|svg)$/));
 
+    // TODO: just map these
     if (rating <= 0.5) {
         return images["Review_Ribbon_small_16_0@2x.png"]
     } else if (rating > 0.5 && rating <= 1) {

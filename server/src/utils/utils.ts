@@ -14,17 +14,21 @@ export async function yelpQuery(req: Request, res: Response) {
     const requestData = req.body;
     const locationString = encodeURIComponent(requestData.location)
 
+
     try {
         // Make a GET request to the Yelp API with some fixed parameters
         // (limit 50, distance 6~ mi., sorted by best match, categories search for 'bubbletea')
-        const url = `https://api.yelp.com/v3/businesses/search?location=${locationString}&radius=10000&categories=bubbletea&sort_by=best_match&limit=50`
+        // const url = `https://api.yelp.com/v3/businesses/search?location=${locationString}&radius=10000&categories=bubbletea&sort_by=best_match&limit=50`
+
         const response = await fetch('http://localhost:3000/test.json', {
             // const response = await fetch(url, {
             headers: {
-                Accept: 'application/json',
+                accept: 'application/json',
                 Authorization: 'Bearer ' + apiKey?.toString()
             }
         })
+        console.log(apiKey)
+        console.log(response)
 
         if (!response.ok) {
             console.log(`err: ${response.status}`)

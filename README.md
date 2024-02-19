@@ -7,7 +7,7 @@
   - e.g. `YELP_API_TOKEN=<my-secret-token> npm start`
 - If the browser doesn't automatically open, please go to `http://localhost:3000` to use the app
 
-## Some thoughts
+## Some process thoughts
 - TODO: def need to cache/store results (500 limited api)
 
 ## `TODO`s/`FIXME`s/nice-to-haves 🛠️
@@ -18,3 +18,4 @@
 - TODO: think about CORS
 - TODO: secrets management
 - TODO: no time for aria-labels
+- TODO: def needs tests 
