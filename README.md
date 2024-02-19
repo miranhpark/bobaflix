@@ -29,7 +29,7 @@
 - I tried to do most of this in Typescript, but definitely had to leave some `any`s around
 - The app assumes the API key is valid, but I would have loved to have some checking/validation/error handling around that
 - The Yelp API has an in-beta GraphQL endpoint which might have been nice here if it works, given we used so few fields
-- I didn't do a great job of distinguishing between `dev` (think: `npm -D install dev deps`) and production required dependencies for now
+- I didn't do a great job of distinguishing between `dev` (think: `npm -D install dev deps`) and production required dependencies for now (nor for `npm` scripts)
 - CORS is enabled freely here since we're operating locally client-to-server
 - Unfortunately, I ran out of time to make sure all the components were accessible/properly aria-label-ed, but would love to
 - Pretty minor, but I would have also loved to add some better styling
