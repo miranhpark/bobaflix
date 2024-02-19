@@ -4,49 +4,62 @@ import Typography from '@mui/material/Typography';
 import BobaflixAppBar from './components/appbar';
 import BobaDataTable from './components/table';
 import LocationRadioSelect from './components/radio'
-import { NetflixLocations } from './utils/types';
+import { NetflixLocation, YelpBusiness } from './utils/types';
 import { defineStars } from './utils/utils';
 
-const App = () => {
-  const [yelpData, setYelpData] = useState<Array<Object>>([]);
-  const [statusOK, setStatusOK] = useState<boolean>(true);
-  const [httpStatus, setHttpStatus] = useState<string>('');
-  const [selectedLocation, setSelectedLocation] = useState<NetflixLocations>(NetflixLocations.LosGatos);
 
-  // TODO: maybe reorganize to return a promise<json>
+async function fetchYelpData(selectedLocation: NetflixLocation): Promise<Array<YelpBusiness>> {
+  // fetch data from the Express backend
+  const requestData = {
+    location: selectedLocation
+  };
+
+  const url = 'http://localhost:3001/api/yelp'
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(requestData),
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP error - status: ${response.status} ${response.statusText}`);
+  }
+
+  // parse the JSON response
+  const result = await response.json();
+
+  // take just business data
+  const businesses = result.data.businesses
+  console.log(businesses)
+  return businesses
+}
+
+const App = () => {
+  const [yelpData, setYelpData] = useState<Array<YelpBusiness>>([]);
+  const [statusOK, setStatusOK] = useState<boolean>(true);
+  const [httpError, setHttpError] = useState<string>('');
+  const [selectedLocation, setSelectedLocation] = useState<NetflixLocation>(NetflixLocation.LosGatos);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // fetch data from the Express backend
-        const requestData = {
-          location: selectedLocation
-        };
-
-        const url = 'http://localhost:3001/api/yelp'
-        const response = await fetch(url, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(requestData),
-        });
-
-        if (!response.ok) {
-          setStatusOK(false);
-          setHttpStatus(`HTTP error - status: ${response.status} ${response.statusText}`);
-          throw new Error(`HTTP error - status: ${response.status}`);
-        }
-
-        // parse the JSON response
-        const result = await response.json();
+        setStatusOK(true)
+        setHttpError('')
+        const result = await fetchYelpData(selectedLocation)
 
         // add star rating data
-        const addStars = defineStars(result.data.businesses)
+        const addStars = defineStars(result)
 
         // set the data in the state
         setYelpData(addStars);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        setStatusOK(false);
+        let message = 'Unknown error'
+        if (error instanceof Error) message = error.message;
+        setHttpError(message)
+        console.error('Error fetching data: ', message);
       }
     };
 
@@ -68,7 +81,7 @@ const App = () => {
         </div>
       ) : (
         <Typography variant="body1" color="inherit" component="div" sx={{ margin: 5 }}>
-          {httpStatus}
+          {httpError}
         </Typography>
       )}
     </div>

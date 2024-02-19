@@ -4,11 +4,11 @@ import FormControl from '@mui/material/FormControl';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormLabel from '@mui/material/FormLabel';
 import Paper from '@mui/material/Paper';
-import { NetflixLocations } from '../utils/types';
+import { NetflixLocation } from '../utils/types';
 
 export default function LocationRadioSelect(props: {
     selectedLocation: string,
-    setSelectedLocation: (location: NetflixLocations) => void
+    setSelectedLocation: (location: NetflixLocation) => void
 }) {
 
     const handleChange = (event: any) => {
@@ -25,9 +25,9 @@ export default function LocationRadioSelect(props: {
                     value={props.selectedLocation}
                     onChange={handleChange}
                 >
-                    <FormControlLabel value={NetflixLocations.LosGatos} control={<Radio />} label={NetflixLocations.LosGatos} />
-                    <FormControlLabel value={NetflixLocations.NewYork} control={<Radio />} label={NetflixLocations.NewYork} />
-                    <FormControlLabel value={NetflixLocations.LosAngeles} control={<Radio />} label={NetflixLocations.LosAngeles} />
+                    <FormControlLabel value={NetflixLocation.LosGatos} control={<Radio />} label={NetflixLocation.LosGatos} />
+                    <FormControlLabel value={NetflixLocation.NewYork} control={<Radio />} label={NetflixLocation.NewYork} />
+                    <FormControlLabel value={NetflixLocation.LosAngeles} control={<Radio />} label={NetflixLocation.LosAngeles} />
                 </RadioGroup>
             </FormControl>
         </Paper>

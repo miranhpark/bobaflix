@@ -32,4 +32,4 @@
 - I didn't do a great job of distinguishing between `dev` (think: `npm -D install dev deps`) and production required dependencies for now (nor for `npm` scripts)
 - CORS is enabled freely here since we're operating locally client-to-server
 - Unfortunately, I ran out of time to make sure all the components were accessible/properly aria-label-ed, but would love to
-- Pretty minor, but I would have also loved to add some better styling
+- Pretty minor, but I would have also loved to add some better styling (and put it into individual style-sheets)

@@ -1,6 +1,7 @@
+import { YelpBusiness } from './types';
 // TODO: fix types
-// utility function for mapping star image from rating
-export function defineStars(yelpData: Array<{}>) {
+// utility function for constructing star image from rating
+export function defineStars(yelpData: Array<YelpBusiness>) {
     const images = importAll(require.context('../../public/stars', false, /\.(png|jpe?g|svg)$/));
     const starsAdded = yelpData.map((row: any) => {
         const roundedRating = Math.round(row.rating * 2) / 2
