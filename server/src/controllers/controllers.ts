@@ -1,24 +1,24 @@
 import { type Request, type Response } from 'express'
 
-
 export function yelpController(req: Request, res: Response): void {
     yelpQuery(req, res)
 }
 
-// TODO: break out api key validation logic
+// TODO: add and break out api key validation logic and handling
+// if (apiKey === undefined) {
+//     res.status(403).json({ error: 'Permission denied (missing API key)' })
+// } else if (true) {
+//     // TODO: check api key valid
+//     res.status(403).json({ error: 'Permission denied (invalid API key)' })
+// }
+
 async function yelpQuery(req: Request, res: Response) {
     const apiKey = process.env.YELP_API_KEY
-    // if (apiKey === undefined) {
-    //     res.status(403).json({ error: 'Permission denied (missing API key)' })
-    // } else if (true) {
-    //     // TODO: check api key valid
-    //     res.status(403).json({ error: 'Permission denied (invalid API key)' })
-    // }
+
 
     // access the data sent from the frontend
     const requestData = req.body;
     const locationString = encodeURIComponent(requestData.location)
-
 
     try {
         // Make a GET request to the Yelp API with some fixed parameters
@@ -32,8 +32,6 @@ async function yelpQuery(req: Request, res: Response) {
                 Authorization: 'Bearer ' + apiKey?.toString()
             }
         })
-        console.log(apiKey)
-        console.log(response)
 
         if (!response.ok) {
             console.log(`err: ${response.status}`)
